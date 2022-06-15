@@ -1,7 +1,7 @@
 
 
 // Add the second handler function parameter and get handleAddFriend
-export default function createAddFriend(root) {
+export default function createAddFriend(root, { handleAddFriend }) {
     const form = root.querySelector('form');
 
     form.addEventListener('submit', (e) => {
