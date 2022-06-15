@@ -3,12 +3,11 @@ export default function createMushrooms(root) {
     const container = root.querySelector('.mushroom-container');
 
     return ({ mushrooms }) => {
-
+        // *** clear out the container element
         container.innerHTML = '';
 
         for (const mushroom of mushrooms) {
-            const image = Mushroom({ mushroom }); 
-            container.append(image);
+            container.append(Mushroom({ mushroom }));
         }
 
     };
