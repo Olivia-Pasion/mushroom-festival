@@ -35,7 +35,6 @@ export function addMushroom(mushroom) {
 export function removeMushroom(mushroom) {
     // find the index of this mushroom
     const index = state.mushrooms.indexOf(mushroom);
-    console.log(index);
     // make sure we found something, indexOf returns -1 if not
     if (index !== -1) {
         state.mushrooms.splice(index, 1);
