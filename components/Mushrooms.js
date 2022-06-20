@@ -4,10 +4,11 @@ export default function createMushrooms(root) {
 
     return ({ mushrooms }) => {
         // *** clear out the container element
-        // loop the mushrooms!
-        // add one Mushroom component for each mushroom object
-        //     - call the Mushroom component with the mushroom object
-        //     - append the returned element to the container  
+        container.innerHTML = '';
+
+        for (const mushroom of mushrooms) {
+            container.append(Mushroom({ mushroom }));
+        }
 
     };
 }

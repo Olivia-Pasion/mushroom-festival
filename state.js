@@ -35,6 +35,7 @@ export function addMushroom(mushroom) {
 export function removeMushroom(mushroom) {
     // find the index of this mushroom
     const index = state.mushrooms.indexOf(mushroom);
+    console.log(index);
     // make sure we found something, indexOf returns -1 if not
     if (index !== -1) {
         state.mushrooms.splice(index, 1);
@@ -57,4 +58,11 @@ export function updateFriend(friend) {
 export function removeFriend(friend) {
     // *** remove the supplied friend from state.friends,
     // use removeMushroom as a guide
+    const index = state.friends.indexOf(friend);
+    // make sure we found something, indexOf returns -1 if not
+    if (index !== -1) {
+        state.friends.splice(index, 1);
+        
+    }
+    
 }
